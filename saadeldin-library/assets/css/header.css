@@ -1,0 +1,63 @@
+/* Saad Eldin header: keep the main menu on one line, readable, and well sized. */
+
+/* Wider inner container so logo + menu + CTA fit comfortably. */
+.elementor-location-header > .e-con > .e-con-inner,
+.elementor-location-header > .e-con.e-con-boxed > .e-con-inner {
+	max-width: 1360px;
+}
+
+@media (min-width: 1025px) {
+	/* The menu column takes the free space instead of a fixed 40%. */
+	.elementor-location-header .e-con:has(> .elementor-widget-nav-menu) {
+		--width: auto;
+		width: auto;
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main {
+		width: 100%;
+	}
+
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-nav-menu {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		gap: 4px;
+	}
+
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item {
+		font-size: 16px !important;
+		font-weight: 600;
+		line-height: 1.2;
+		padding: 12px 14px !important;
+		white-space: nowrap;
+		color: #f3ead7 !important;
+		transition: color .2s ease;
+	}
+
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:hover,
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:focus-visible,
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.elementor-item-active,
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .current-menu-item > .elementor-item {
+		color: #d7a95e !important;
+	}
+
+	/* Active underline: short and centred under the text. */
+	.elementor-location-header .elementor-widget-nav-menu .e--pointer-underline .elementor-item::after,
+	.elementor-location-header .elementor-widget-nav-menu .e--pointer-underline .elementor-item::before {
+		height: 2px;
+		background-color: #d7a95e !important;
+		inset-inline: 14px;
+		width: auto;
+	}
+}
+
+/* Slightly tighter on small laptops so nothing wraps. */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.elementor-location-header .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item {
+		font-size: 15px !important;
+		padding: 10px 10px !important;
+	}
+}
