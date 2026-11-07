@@ -1,9 +1,12 @@
 ﻿# ibrahimsaadeldin.com
 
-WordPress plugin for Saad Eldin Law Firm: legal articles (native posts) and a YouTube video library.
+WordPress site files for Saad Eldin Law Firm (Astra + Elementor), without secrets.
 
-- `saadeldin-library/` – the plugin (upload as a zip under Plugins -> Add New).
-- `tools/migrate-old-content.php` – one-off script that converted the old `article`/`video` post types
-  to native posts and the `videos` post type. Local use only; edit the `wp-load.php` path first.
+- `wp-content/plugins/saadeldin-library/` – custom plugin: articles (native posts) and the YouTube `videos` library.
+- `tools/migrate-old-content.php` – one-off local script used to convert the old content types.
 
-No secrets, database dumps or uploads are stored in this repository.
+## Not in this repository
+- `wp-config.php` (database credentials and salts) – create it on the server from `wp-config-sample.php`.
+- The database (export it from the old host with phpMyAdmin).
+- `elementor-pro` – install it with your own licence.
+- Cache and backup folders.

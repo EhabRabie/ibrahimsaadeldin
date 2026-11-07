@@ -1,0 +1,52 @@
+<?php return array(
+    'root' => array(
+        'name' => 'awesomemotive/all-in-one-seo-pack-pro',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'reference' => '63ed5021c2ccc507b63cd5d00f7f8275e6b9c157',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'awesomemotive/all-in-one-seo-pack-pro' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => '63ed5021c2ccc507b63cd5d00f7f8275e6b9c157',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'jwhennessey/phpinsight' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '0618bd228db16f408f5004bd97c6423d281edc51',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jwhennessey/phpinsight',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'league/html-to-markdown' => array(
+            'pretty_version' => '5.2.3',
+            'version' => '5.2.3.0',
+            'reference' => '905eb9374feee6cedf9b972fc47c7c26a86bbec1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/html-to-markdown',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'woocommerce/action-scheduler' => array(
+            'pretty_version' => '3.9.3',
+            'version' => '3.9.3.0',
+            'reference' => 'c58cdbab17651303d406cd3b22cf9d75c71c986c',
+            'type' => 'wordpress-plugin',
+            'install_path' => __DIR__ . '/../woocommerce/action-scheduler',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

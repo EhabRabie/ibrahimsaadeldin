@@ -1,3 +1,17 @@
-*.zip
-*.sql
+# Secrets and environment-specific files
 wp-config.php
+.htaccess.bk
+*.sql
+*.zip
+*.log
+error_log
+
+# Licensed / generated
+wp-content/plugins/elementor-pro/
+wp-content/plugins/elementor-pro-activator/
+wp-content/litespeed/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/cache/
+
+.private/
